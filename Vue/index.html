@@ -1,0 +1,40 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de NFTs del Real Madrid</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos CSS -->
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">Real NFT</div> <!-- Logo de la tienda -->
+    <ul>
+      <li><a href="#">Inicio</a></li> <!-- Enlace a la página de inicio -->
+      <li><a href="#">Productos</a></li> <!-- Enlace a la página de productos -->
+      <li><a href="#">Contacto</a></li> <!-- Enlace a la página de contacto -->
+      <!-- Nuevo botón de inicio de sesión -->
+      <li><a href="#" class="login-btn">Iniciar Sesión</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div id="app">
+  <!-- Componente para mostrar productos y manejar el carrito de compras -->
+  <product-item v-for="product in products" :key="product.id" :product="product" :currency="currency" @add-to-cart="addToCart"></product-item>
+  <button @click="toggleCart">Ver Carrito</button> <!-- Botón para mostrar/ocultar el carrito -->
+  <cart-modal v-if="showCart" :cart="cart" :currency="currency" @close-modal="toggleCart"></cart-modal> <!-- Modal del carrito -->
+</div>
+
+<footer>
+  <p>&copy; 2024 Tu Tienda de NFTs del Real Madrid - ¡Únete ya!</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script> <!-- Inclusión de Vue.js -->
+<script src="app.js"></script> <!-- Inclusión del archivo JavaScript de la aplicación -->
+</body>
+</html>
