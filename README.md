@@ -46,3 +46,7 @@ Si deseas contribuir a este proyecto, ¡estamos abiertos a colaboraciones! Sién
 Licencia
 
 Este proyecto este proyecto no tiene Licencia MIT. 
+
+A mejorar:
+
+Incorporar más métodos de pago, ya sea en criptomonedas o en diferentes tipos de divisas. También me gustaría agregar una función para cerrar el carrito.
