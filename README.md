@@ -45,4 +45,4 @@ Si deseas contribuir a este proyecto, ¡estamos abiertos a colaboraciones! Sién
 
 Licencia
 
-Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para obtener más detalles.
+Este proyecto este proyecto no tiene Licencia MIT. 
